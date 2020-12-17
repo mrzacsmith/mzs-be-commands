@@ -1,7 +1,12 @@
 {
   "name": "zac-be",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple command tool to pre-populate directory for MERN",
+  "keywords": [
+    "mern",
+    "shelljs",
+    "mrzacsmith"
+  ],
   "main": "index.js",
   "bin": {
     "zac-be": "index.js"
@@ -13,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/mrzacsmith/mzs-be-commands.git"
   },
-  "author": "",
+  "author": "Zac Smith",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mrzacsmith/mzs-be-commands/issues"
