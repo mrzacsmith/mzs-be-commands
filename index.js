@@ -5,18 +5,20 @@ require('colors')
 const commands = [
   'git init',
   'npx gitignore node',
-  'touch index.js',
+  'touch index.js .env',
   'npm init -y',
-  'mkdir utils',
   'npm i -D nodemon --save',
-  'npm i express helmet cors colors --save',
+  'npm i express helmet cors colors morgan mongoose dotenv --save',
+  'mkdir utils api auth routes models',
+  'touch utils/db.js api/server.js',
 ]
 
 const runCommands = async () => {
-  for (i of commands) {
-    await shell.exec(i)
-    await console.log(i.green)
+  for (command of commands) {
+    await shell.exec(command)
+    await console.log(command.green)
   }
+  console.log('\n\tComplete'.america)
 }
 
 runCommands()
